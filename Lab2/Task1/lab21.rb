@@ -9,7 +9,7 @@ vertices = [[50,162], [62,123], [71,92], [82,73], [112,58],
 
 area = 0
 
-for i in 0..vertices.size-1 do
+for i in 0...vertices.size do
   area += (vertices[i][0] + vertices[(i + 1) % vertices.size][0]) * (vertices[i][1] - vertices[(i + 1) % vertices.size][1])
 end
 
